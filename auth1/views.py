@@ -8,8 +8,8 @@ from .models import Profile
 # Create your views here.
 
 def home(request):
+	"""Returns the user back to home page."""
 	return render(request,'home.html',{'name':'Dr Abimbola Oluyemi'})
-
 
 def intro(request):
 	return render(request,'intro.html',{'name':'Dr Abimbola Oluyemi'})
