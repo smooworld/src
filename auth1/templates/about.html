@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+
+ <section id="content">
+    <div class="main">
+            <div class="indent-left"><br>
+                <img src="{% static 'face.jpeg' %}" alt="picture" style="width:1000px;height:500px;"><br>
+              <h4 class="color-3">About {{name}}</h4><br><br>
+
+
+              <p>   {{name}} is the former Minister of Mines and Steel Development in the Government of the Federal Republic of Nigeria
+    (2015 – 2018). He led the administration’s efforts in repositioning the Nigerian Mining sector to contribute optimally to the
+    priority agendas of diversifying the country’s revenue base and creating jobs and economic opportunities for Nigerians.
+    During his tenure as Minister, he concurrently served as Chairman of the governing board of the Nigeria ExtractiveIndustries
+  Transparency Initiative (NEITI). He was also the Governor of Ekiti State in Southwest Nigeria (2010 – 2014).</p>
+
+
+<p> {{name}} holds degrees in History and International Relations from the University of Lagos and Obafemi Awolowo University
+    respectively, a Doctorate in War Studies from King’s College, University of London and is a Fellow of the Centre for Peace
+    and Conflict Studies, University of Ibadan. His research and policy development interests include: Natural Resource Governance,
+    Democratisation, Constitutionalism, Security Sector Governance, Civil-Military Relations and Regionalism in the Global Context.
+    Amongst other academic and public policy engagements at home and abroad, {{name}} has lectured in Africa, Europe, the Americas
+    and Asia. He has also served as adviser on Transitional Justice, Regional Integration, Constitutionalism, Security Sector
+    Reforms and Civil-Military Relations to various governments, multilateral institutions and development agencies.</p>
+
+<p> {{name}} was the founding director of the Centre for Democracy Development (CDD), a research and training institute dedicated to the study and promotion
+  of democratisation, peace-building and human security in Africa. As a central figure in the coalition of civil society actors that resisted oppressive military
+  rule in Nigeria in the early 1990s, he was central to the founding and running of opposition radio stations while in exile. His role in the struggle to restore
+  democratic governance in Nigeria is documented in his book <i>Out of the Shadows: Exile and the Struggle for Freedom and Democracy in Nigeria</i> (CDD, 2005).
+  His other publications include: <i>Mercenaries: The African Security Dilemma</i>, co-edited with Abdel-Fatau Musah (Pluto Press, 2000); <i>Deepening the
+    Culture of Constitutionalism: The Role of Regional Institutions in Constitutional Development in Africa</i> (CDD, 2003); and <i>Security Sector Governance in
+    Africa: A Handbook</i> (co-edited with Nicole Ball, CDD, 2004); Reclaiming the Trust (Amandla, 2012); Regaining the Legacy
+    (Amandla, 2013); and Legacy of Honour and Service (Amandla, 2014).</p>
+
+
+<p>  {{name}} is a prominent member of the governing All Progressives Congress (APC) and chaired the party's National Convention Planning Committee that
+  produced the Presidential Candidate for the 2015 general election and now President. He also served as the Director, Policy Research and Strategy of the APC
+  Presidential Campaign Council. He is currently the Governor of Ekiti State.</p>
+
+    </div>
+        <p><h5>Go back to the <a href="{% url 'home' %}"> Homepage</a></h5></p>
+</div>
+  </section>
+{% endblock %}

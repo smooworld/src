@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+<div class="main">
+          <article class="grid_8">
+            <div class="indent-left"><br>
+              <h4 class="color-3">{{name}}'s project</h4><br><br>
+
+<div> <p style="text-align: left;">Renovation of Government Science College </p>
+        <figure class="wpb_wrapper vc_figure">
+			<img src="{% static 'science_coll1.jpeg' %}" alt="picture" style="width:800px;height:400px;">
+        </figure>
+</div>
+
+<div> <p style="text-align: left;">Construction of Thirty Two (32) Open market stalls with Toilets</p>
+        <figure class="wpb_wrapper vc_figure">
+			<img src="{% static 'open_mark.jpeg' %}" alt="picture" style="width:800px;height:400px;">
+        </figure>
+</div>
+
+<div> <p style="text-align: left;">Renovation of Government Science College</p>
+        <figure class="wpb_wrapper vc_figure">
+			<img src="{% static 'science_coll2.jpeg' %}" alt="picture" style="width:800px;height:400px;">
+        </figure>
+</div>
+
+
+<div> <p style="text-align: left;">Renovation of The University</p>
+        <figure class="wpb_wrapper vc_figure">
+			<img src="{% static 'gate.jpg' %}" alt="picture" style="width:800px;height:400px;">
+        </figure>
+</div>
+
+<div> <p style="text-align: left;">Renovation of Borehole at Comprehensive Health Center </p>
+        <figure class="wpb_wrapper vc_figure">
+			<img src="{% static 'pipe2.jpeg' %}" alt="picture" style="width:800px;height:400px;">
+        </figure>
+</div>
+
+<div> <p style="text-align: left;">Agriculture Equipment</p>
+        <figure class="wpb_wrapper vc_figure">
+			<img src="{% static 'Agriculture.png' %}" alt="picture" style="width:800px;height:400px;">
+        </figure>
+</div>
+                <p><h5>Go back to the <a href="{% url 'home' %}"> Homepage</a></h5></p>
+        </div>
+
+
+
+</div>
+{% endblock %}

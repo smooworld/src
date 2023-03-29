@@ -1,0 +1,15 @@
+{%  extends 'base.html' %}
+{% block content %}
+<div class="container">
+	<h1 class="text-center">Edit Profile</h1>
+<form method="POST" action="{% url 'edit_profile' %}">
+	{% csrf_token %}
+	{% if form.errors %}
+		<p> your form has errors</p>
+	{% endif %}	
+	{{ form.as_p }}
+	<input type = "submit" value="Update" class="btn-btn-secondary">
+</form>	
+	<p><a href="{% url 'change_password' %}">Click Here</a> to change password</small></p>
+</div>
+{% endblock%}
